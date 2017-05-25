@@ -32,4 +32,13 @@ public class Card {
     public void setSuit(SUIT suit) {
         this.suit = suit;
     }
+
+
+    public boolean equals(Card card) {
+        if (this.value == card.value && this.suit == card.suit) {
+            return true;
+        }
+
+        return false;
+    }
 }
